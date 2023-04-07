@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datos Usuario</title>
+</head>
+<body>
+	<h1 style="text-align: left;">Rellena tu CV</h1>
+	<form action="#" method="POST">
+		<p>Nombre:</p>
+		<input type="text" name="nombre"><br><br>
+		<p>Apellidos</p>
+		<input type="text" name="apellidos"><br><br>
+		<p>Contraseña</p>
+		<input type="password" name="contrasena"><br><br>
+		<p>Confirme Contraseña</p>
+		<input type="password" name="confirmar_contrasena"><br><br>
+		<form>
+			<div>
+			  <label for="numero-identificacion">Identificación</label><br><br>
+			  <select id="tipo-identificacion">
+				<option value="TI">TI</option>
+				<option value="CC">CC</option>
+			  </select>
+			  <input type="text" id="numero-identificacion" style="margin-right: 5px;">
+			  <br>
+			</div>
+			<p>Sexo</p>
+			<input type="radio" name="sexo" value="hombre">Hombre<br>
+			<input type="radio" name="sexo" value="mujer">Mujer<br><br>
+		  </form>
+		<p>Incluir mi foto</p>
+		<input type="file" name="foto"><br><br>
+		<label>
+			<input type="checkbox" name="estudiante" value="estudiante" style="vertical-align: middle;"> Estudiante...
+		  </label><br><br>
+		<div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; width: 20%;">
+			<h2 style="display: inline-block; margin-top: 0; margin-left: 0px;">Datos personales</h2>
+			<p>Departamento</p>
+			<select name="departamento">
+			  <option value="">- Selecciona -</option>
+			  <option value="Amazonas">Amazonas</option>
+			  <option value="Antioquia">Antioquia</option>
+			  <option value="Arauca">Arauca</option>
+			  <option value="Atlántico">Atlántico</option>
+			  <option value="Bolívar">Bolívar</option>
+			</select>
+			<p>Fecha de Nacimiento</p>
+<div>
+  <input type="number" placeholder="Día" style="width: 50px;">
+  <span style="padding: 0 5px;">de</span>
+  <button type="button" onclick="toggleMonths()">Enero &#9660;</button>
+  <div id="month-dropdown" style="display: none; position: absolute; z-index: 1;">
+    <select>
+      <option>Enero</option>
+      <option>Febrero</option>
+      <option>Marzo</option>
+      <option>Abril</option>
+      <option>Mayo</option>
+      <option>Junio</option>
+      <option>Julio</option>
+      <option>Agosto</option>
+      <option>Septiembre</option>
+      <option>Octubre</option>
+      <option>Noviembre</option>
+      <option>Diciembre</option>
+    </select>
+  </div>
+  <span style="padding: 0 5px;">de</span>
+  <input type="number" placeholder="Año" style="width: 70px;">
+</div>
+
+<script>
+  function toggleMonths() {
+    var dropdown = document.getElementById("month-dropdown");
+    dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+  }
+</script>
+<p>Temas de Interés</p>
+<div style="height: 100px; overflow-y: scroll; border: 1px solid black; padding: 10px;">
+  <label>Administración de bases de datos</label><br>
+  <label>Análisis y programación</label><br>
+  <label>Arquitectura</label><br>
+  <label>Calidad</label><br>
+  <label>ERP</label><br>
+  <label>CRM</label><br>
+  <label>Business Intelligence</label><br>
+</div>
+		  </div>
+		  <button type="button" onclick="guardarCambios()">Guardar cambios</button>
+    <button type="button" onclick="borrarDatos()">Borrar datos introducidos</button>
+
+    <script>
+      function guardarCambios() {
+        // Aquí puedes agregar el código para guardar los cambios
+        alert("Cambios guardados");
+      }
+
+      function borrarDatos() {
+        // Aquí puedes agregar el código para borrar los datos introducidos
+        alert("Datos borrados");
+      }
+    </script>
+	</form>
+	<script>
+		var btn = document.getElementById("menu-btn");
+		var opciones = document.getElementById("opciones");
+		btn.addEventListener("click", function() {
+			if (opciones.style.display === "none") {
+				opciones.style.display = "block";
+			} else {
+				opciones.style.display = "none";
+			}
+		});
+		
+		opciones.addEventListener("click", function(e) {
+			btn.innerHTML = e.target.innerHTML + " &#x25BE;";
+			opciones.style.display = "none";
+		});
+	</script>
+</body>
+</html>

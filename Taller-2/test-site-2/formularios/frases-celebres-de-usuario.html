@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fases célebres de usuario</title>
+</head>
+<body>
+	<h1>Fases célebres de usuario</h1>
+	<form>
+		<label for="nombre-usuario">Nombre de usuario:</label>
+		<input type="text" id="nombre-usuario" name="nombre-usuario"><br>
+
+		<label for="frase-principal">Frase principal:</label>
+		<textarea id="frase-principal" name="frase-principal" rows="2" cols="30"></textarea><br>
+
+		<label for="frase-secundaria">Frase secundaria:</label>
+		<textarea id="frase-secundaria" name="frase-secundaria" rows="2" cols="30"></textarea><br>
+
+		<button type="submit" name="enviar">Enviar</button>
+		<button type="button" name="enviar-email" onclick="enviarCorreo()">Enviar por correo</button>
+		<button type="button" name="volver-menu" onclick="volverMenu()">Volver al menú</button>
+	</form>
+
+	<script>
+		function enviarCorreo() {
+			// Aquí se puede agregar el código para enviar el correo
+			alert("Correo enviado");
+		}
+
+		function volverMenu() {
+			// Aquí se puede agregar el código para redirigir al usuario al menú principal
+			alert("Volviendo al menú principal");
+		}
+	</script>
+</body>
+</html>
