@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fases célebres de usuario</title>
+	<meta charset="UTF-8">
+	<title>Frases célebres de usuario</title>
 </head>
 <body>
-	<h1>Fases célebres de usuario</h1>
+	<h1>Frases célebres de usuario</h1>
+	<div style="padding: 10px; border-radius: 5px; width: 20%;">
 	<form>
-		<label for="nombre-usuario">Nombre de usuario:</label>
-		<input type="text" id="nombre-usuario" name="nombre-usuario"><br>
+		<fieldset>
+			<legend>Datos del usuario</legend>
+			<label for="nombre-usuario">Nombre:</label>
+			<input type="text" id="nombre-usuario" name="nombre-usuario"><br>
 
-		<label for="frase-principal">Frase principal:</label>
-		<textarea id="frase-principal" name="frase-principal" rows="2" cols="30"></textarea><br>
+			<label for="frase1">Frase 1:</label>
+			<textarea id="frase1" name="frase1" rows="2" cols="30"></textarea><br>
 
-		<label for="frase-secundaria">Frase secundaria:</label>
-		<textarea id="frase-secundaria" name="frase-secundaria" rows="2" cols="30"></textarea><br>
-
-		<button type="submit" name="enviar">Enviar</button>
-		<button type="button" name="enviar-email" onclick="enviarCorreo()">Enviar por correo</button>
-		<button type="button" name="volver-menu" onclick="volverMenu()">Volver al menú</button>
+			<label for="frase2">Frase 2:</label>
+			<textarea id="frase2" name="frase2" rows="2" cols="30"></textarea><br>
+			
+			<label for="frase-principal">Frase principal:</label>
+			<select id="frase-principal" name="frase-principal">
+				<option value="frase1">Frase 1</option>
+				<option value="frase2">Frase 2</option>
+			</select><br>
+		</fieldset>
+	</div>
+		<button type="submit" name="enviar-email">Enviar por correo</button>
+		<button><a href="C:\Users\Usuario\Documents\Clone\Taller-2\test-site-2\lista.html">Volver al menú</a></button>
 	</form>
-
-	<script>
-		function enviarCorreo() {
-			// Aquí se puede agregar el código para enviar el correo
-			alert("Correo enviado");
-		}
-
-		function volverMenu() {
-			// Aquí se puede agregar el código para redirigir al usuario al menú principal
-			alert("Volviendo al menú principal");
-		}
-	</script>
 </body>
 </html>

@@ -33,8 +33,10 @@
 		<label>
 			<input type="checkbox" name="estudiante" value="estudiante" style="vertical-align: middle;"> Estudiante...
 		  </label><br><br>
-		<div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; width: 20%;">
-			<h2 style="display: inline-block; margin-top: 0; margin-left: 0px;">Datos personales</h2>
+		<div style="padding: 10px; border-radius: 5px; width: 21%;">
+			<form>
+				<fieldset>
+					<legend>Datos del usuario</legend>
 			<p>Departamento</p>
 			<select name="departamento">
 			  <option value="">- Selecciona -</option>
@@ -85,18 +87,17 @@
   <label>CRM</label><br>
   <label>Business Intelligence</label><br>
 </div>
+	<form>
 		  </div>
 		  <button type="button" onclick="guardarCambios()">Guardar cambios</button>
     <button type="button" onclick="borrarDatos()">Borrar datos introducidos</button>
 
     <script>
       function guardarCambios() {
-        // Aquí puedes agregar el código para guardar los cambios
         alert("Cambios guardados");
       }
 
       function borrarDatos() {
-        // Aquí puedes agregar el código para borrar los datos introducidos
         alert("Datos borrados");
       }
     </script>

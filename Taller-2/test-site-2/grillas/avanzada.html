@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Normal</title>
+    <style>
+      table {
+        margin: 20px;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      table th {
+        border-top: 2px solid black;
+      }
+      table td table td, table td table th {
+        border: none;
+      }
+      th:first-child {
+        vertical-align: top;
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>Personajes de comics</caption>
+      <thead>
+        <tr>
+            <td style="text-align:center; vertical-align:middle; font-weight: bold;" rowspan="2">Nombre</td>
+            <td colspan="2" style="text-align:center; vertical-align:middle; height: 40px;"><strong>DC</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Identidad secreta</strong></td>
+            <td><strong>Link</strong></td>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Superman</strong></td>
+          <td>Clark Kent</td>
+          <td><a href="https://www.dc.com/characters/superman">dc</a></td>
+        </tr>
+        <tr>
+          <td><strong>Batman</strong></td>
+          <td>Bruce Wayne</td>
+          <td><a href="https://www.dc.com/characters/batman">dc</a></td>
+        </tr>
+        <thead>
+            <tr>
+                <td style="text-align:center; vertical-align:middle; font-weight: bold;" rowspan="2">Nombre</td>
+                <td colspan="2" style="text-align:center; vertical-align:middle; height: 40px;"><strong>Marvel</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Identidad secreta</strong></td>
+                <td><strong>Link</strong></td>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Cap America</strong></td>
+              <td>Steve Rogers</td>
+              <td><a href="https://www.marvel.com/characters/captain-america-steve-rogers">marvel</a></td>
+            </tr>
+            <tr>
+              <td><strong>Spiderman</strong></td>
+              <td>Peter Parker</td>
+              <td><a href="https://www.marvel.com/characters/spider-man-peter-parker">marvel</a></td>
+            </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" style="text-align: left;">Pie de tabla.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
